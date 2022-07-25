@@ -1,0 +1,26 @@
+PS C:\Windows\system32> C:\git\shellexperimental\powershellx.ps1
+File C:\git\shellexperimental\powershellx.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at 
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+    + CategoryInfo          : SecurityError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+PS C:\Windows\system32> C:\git\shellexperimental\powershellx.ps1
+File C:\git\shellexperimental\powershellx.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at 
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+    + CategoryInfo          : SecurityError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned
+
+
+PS C:\Windows\system32> C:\git\shellexperimental\powershellx.ps1
+Add-Type : Could not load file or assembly 'C:\\Program Files\\Digi\\AnywhereUSB\\Advanced\\AwUsbApi.dll' or one of its dependencies. The given assembly name or codebase 
+was invalid. (Exception from HRESULT: 0x80131047)
+At C:\git\shellexperimental\powershellx.ps1:10 char:1
++ Add-Type -AssemblyName 'C:\Program Files\Digi\AnywhereUSB\Advanced\Aw ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Add-Type], FileLoadException
+    + FullyQualifiedErrorId : System.IO.FileLoadException,Microsoft.PowerShell.Commands.AddTypeCommand
+ 
+
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned
